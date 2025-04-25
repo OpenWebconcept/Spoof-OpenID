@@ -1,0 +1,35 @@
+name: "OWC Spoof OpenID"
+
+applicationSuite:
+  name: "OpenWebconcept"
+
+publiccodeYmlVersion: 1.0
+url: "https://github.com/OpenWebconcept/owc-spoof-openid"
+
+platforms:
+  - "web"
+
+categories:
+  - "application-development"
+
+softwareType: "library"
+
+description:
+  localisedName: "Spoof logging into OpenID providers such as DigiD and eHerkenning"
+  shortDescription: "Spoof logging into OpenID providers such as DigiD and eHerkenning."
+  longDescription: "The Spoof OpenID WordPress plugin is a development tool designed to simulate logging into OpenID providers such as DigiD and eHerkenning. This plugin is ideal for testing and development environments where real authentication with OpenID providers is not feasible or practical."
+
+legal:
+  license: EUPL-1.2
+  mainCopyrightOwner: "Sander de Kroon"
+  repoOwner: "Sander de Kroon"
+
+maintenance:
+  type: "internal"
+  contacts:
+    - name: "Sander de Kroon"
+      email: "sander@dekroon.net"
+
+nl:
+  commonground:
+    layerType: "service"

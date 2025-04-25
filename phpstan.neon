@@ -1,0 +1,7 @@
+parameters:
+    level: 6
+    phpVersion: 70400
+    paths:
+        - src
+includes:
+    - vendor/szepeviktor/phpstan-wordpress/extension.neon
