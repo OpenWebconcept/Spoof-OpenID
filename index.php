@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * Plugin Name:       OWC Spoof OpenID
  * Plugin URI:        https://www.openwebconcept.nl/
@@ -15,7 +17,9 @@
 
 namespace OWC\SpoofOpenId;
 
-require_once 'vendor/autoload.php';
+if (file_exists('vendor/autoload.php')) {
+	require_once 'vendor/autoload.php';
+}
 
 $plugin = new Plugin();
 $plugin->boot();
