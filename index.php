@@ -6,7 +6,7 @@ declare(strict_types=1);
  * Plugin Name:       OWC Spoof OpenID
  * Plugin URI:        https://www.openwebconcept.nl/
  * Description:       Spoof logging into OpenID providers such as DigiD and eHerkenning
- * Version:           1.0.0
+ * Version:           2.0.0
  * Author:            sanderdekroon
  * Author URI:        https://sanderdekroon.net
  * License:           EUPL-1.2

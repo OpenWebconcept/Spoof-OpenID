@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     'plugin.name'       => 'OWC Spoof OpenID',
     'plugin.slug'       => 'owc-spoof-id',
-    'plugin.version'    => '1.0.0',
+    'plugin.version'    => '2.0.0',
     'plugin.file'       => \dirname(__DIR__) . '/index.php',
     'plugin.path'       => \dirname(__DIR__),
     'plugin.url'        => plugins_url(\basename(\dirname(__DIR__))),
