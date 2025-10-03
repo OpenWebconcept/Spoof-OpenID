@@ -8,7 +8,7 @@ class Plugin
 {
     protected Container $container;
 
-    public function __construct(Container $container = null)
+    public function __construct(?Container $container = null)
     {
         $this->container = $container ?: new Container();
         // And this is where the magic happens ( ͡° ͜ʖ ͡°)
