@@ -17,7 +17,7 @@ class Settings
         'enable_simulator', 'userlevel', 'bsn', 'kvk'
     ];
 
-    public function get(string $name)
+    public function get(string $name): mixed
     {
         return get_option("owc_spoof_openid_{$name}");
     }

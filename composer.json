@@ -17,7 +17,7 @@
 		}
 	],
   "require": {
-    "php": "^7.4|^8.0",
+    "php": "^8.0",
     "owc/idp-userdata": "^1.0"
   },
   "require-dev": {
@@ -42,7 +42,7 @@
     "test": "clear && ./vendor/bin/phpunit --testsuite 'main' --colors=always",
     "format": "vendor/bin/php-cs-fixer fix",
     "phpstan": "./vendor/bin/phpstan analyse -c phpstan.neon --memory-limit 1g",
-    "phpcompatibility": "./vendor/bin/phpcs -p ./src/ --standard=PHPCompatibility --runtime-set testVersion 7.4-"
+    "phpcompatibility": "./vendor/bin/phpcs -p ./src/ --standard=PHPCompatibility --runtime-set testVersion 8.0-"
   },
   "config": {
       "sort-packages": true,
