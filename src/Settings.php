@@ -14,7 +14,7 @@ class Settings
     public const USERLEVEL_GUEST = 'guest';
 
     protected array $knownSettings = [
-        'enable_simulator', 'userlevel', 'bsn', 'kvk'
+        'enable_simulator', 'userlevel', 'bsn', 'kvk', 'vestigings_nummer', 'rsin',
     ];
 
     public function get(string $name): mixed
@@ -65,6 +65,15 @@ class Settings
         return (string) $this->get('kvk');
     }
 
+    public function getVestigingsNummer(): string
+    {
+        return (string) $this->get('vestigings_nummer');
+    }
+
+    public function getRsin(): string
+    {
+        return (string) $this->get('rsin');
+    }
 
     public function getKnownSettings(): array
     {

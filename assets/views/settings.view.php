@@ -56,7 +56,7 @@ use OWC\SpoofOpenId\Settings;
                     </label>
 				</td>
 			</tr>
-            
+
             <tr>
 				<th scope="row">
 					<label for="owc_spoof_openid_bsn">
@@ -76,6 +76,28 @@ use OWC\SpoofOpenId\Settings;
 				</th>
 				<td>
 					<input type="number" min="0" name="owc_spoof_openid_kvk" id="owc_spoof_openid_kvk" value="<?php echo esc_attr($this->settings->getKvk()); ?>">
+				</td>
+			</tr>
+
+			<tr>
+				<th scope="row">
+					<label for="owc_spoof_openid_vestigings_nummer">
+						<?php esc_html_e('Vestigingsnummer', 'owc-signicat-openid'); ?>
+					</label>
+				</th>
+				<td>
+					<input type="number" min="0" name="owc_spoof_openid_vestigings_nummer" id="owc_spoof_openid_vestigings_nummer" value="<?php echo esc_attr($this->settings->getVestigingsNummer()); ?>">
+				</td>
+			</tr>
+
+			<tr>
+				<th scope="row">
+					<label for="owc_spoof_openid_rsin">
+						<?php esc_html_e('RSIN-nummer', 'owc-signicat-openid'); ?>
+					</label>
+				</th>
+				<td>
+					<input type="number" min="0" name="owc_spoof_openid_rsin" id="owc_spoof_openid_rsin" value="<?php echo esc_attr($this->settings->getRsin()); ?>">
 				</td>
 			</tr>
 
