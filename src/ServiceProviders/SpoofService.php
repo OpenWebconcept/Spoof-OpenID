@@ -84,10 +84,13 @@ class SpoofService extends ServiceProvider
             return;
         }
 
+        $vestigingsNummer = $this->settings->getVestigingsNummer();
+        $rsin = $this->settings->getRsin();
+
         add_filter('owc_eherkenning_is_logged_in', fn (bool $isLoggedIn): bool => true, 999);
 
-        add_filter('owc_eherkenning_userdata', function (?UserDataInterface $userData) use ($kvk) {
-            return new EHerkenning($kvk);
+        add_filter('owc_eherkenning_userdata', function (?UserDataInterface $userData) use ($kvk, $vestigingsNummer, $rsin) {
+            return new EHerkenning($kvk, $vestigingsNummer, $rsin);
         }, 999);
     }
 }

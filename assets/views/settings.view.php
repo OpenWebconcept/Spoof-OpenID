@@ -5,7 +5,7 @@ use OWC\SpoofOpenId\Settings;
 ?>
 
 <div class="wrap">
-	<h1><?php esc_html_e('Signicat Simulator', 'owc-signicat-openid'); ?></h1>
+	<h1><?php esc_html_e('Signicat Simulator', 'owc-spoof-openid'); ?></h1>
 
     <p>Nog geen Signicat aansluiting gerealiseerd? Worry no more! Met de <em>Signicat Simulator 2000™</em> kun je net doen alsof je ingelogd bent op DigiD of eHerkenning!</p>
 
@@ -56,11 +56,11 @@ use OWC\SpoofOpenId\Settings;
                     </label>
 				</td>
 			</tr>
-            
+
             <tr>
 				<th scope="row">
 					<label for="owc_spoof_openid_bsn">
-						<?php esc_html_e('BSN-nummer', 'owc-signicat-openid'); ?>
+						<?php esc_html_e('BSN-nummer', 'owc-spoof-openid'); ?>
 					</label>
 				</th>
 				<td>
@@ -71,11 +71,33 @@ use OWC\SpoofOpenId\Settings;
             <tr>
 				<th scope="row">
 					<label for="owc_spoof_openid_kvk">
-						<?php esc_html_e('KvK-nummer', 'owc-signicat-openid'); ?>
+						<?php esc_html_e('KvK-nummer', 'owc-spoof-openid'); ?>
 					</label>
 				</th>
 				<td>
 					<input type="number" min="0" name="owc_spoof_openid_kvk" id="owc_spoof_openid_kvk" value="<?php echo esc_attr($this->settings->getKvk()); ?>">
+				</td>
+			</tr>
+
+			<tr>
+				<th scope="row">
+					<label for="owc_spoof_openid_vestigings_nummer">
+						<?php esc_html_e('Vestigingsnummer', 'owc-spoof-openid'); ?>
+					</label>
+				</th>
+				<td>
+					<input type="number" min="0" name="owc_spoof_openid_vestigings_nummer" id="owc_spoof_openid_vestigings_nummer" value="<?php echo esc_attr($this->settings->getVestigingsNummer()); ?>">
+				</td>
+			</tr>
+
+			<tr>
+				<th scope="row">
+					<label for="owc_spoof_openid_rsin">
+						<?php esc_html_e('RSIN-nummer', 'owc-spoof-openid'); ?>
+					</label>
+				</th>
+				<td>
+					<input type="number" min="0" name="owc_spoof_openid_rsin" id="owc_spoof_openid_rsin" value="<?php echo esc_attr($this->settings->getRsin()); ?>">
 				</td>
 			</tr>
 
